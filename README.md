@@ -1,4 +1,4 @@
 # PhotoGalleryAndroid
 Authors:
-Alexander Nocciolo
+Alexander Nocciolo,
 Tejas Nimkar
