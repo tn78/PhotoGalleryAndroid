@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Android Assignment</string>
+    <string-array name="tag_types">
+        <item>Person</item>
+        <item>Location</item>
+    </string-array>
+    <string name="create">Create</string>
+    <string name="delete">Delete</string>
+    <string name="rename">Rename</string>
+    <string name="display">Display</string>
+    <string name="enter_album_name">Enter Album Name</string>
+    <string name="name">Name</string>
+    <string name="photo_url">Photo URL</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="menu_add">Menu Add</string>
+    <string name="add_album">Add Album</string>
+    <string name="back">Back</string>
+    <string name="add_picture">Add Picture</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="tag_value">Tag Value</string>
+    <string name="delete_tag">Delete Tag</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="move_to">Move To</string>
+    <string name="tags">Tags:</string>
+    <string name="person">Person</string>
+    <string name="location">Location</string>
+    <string name="search">Search</string>
+</resources>

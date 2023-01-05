@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoList">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tfPicURL"
+                android:layout_width="378dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textUri" />
+
+            <Button
+                android:id="@+id/btnAddPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addPic"
+                android:text="@string/add_picture" />
+
+            <EditText
+                android:id="@+id/renameAlb"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAlbRename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:onClick="renameAlb"
+                android:text="@string/rename" />
+
+            <Button
+                android:id="@+id/btnAlbDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:onClick="deleteAlb"
+                android:text="@string/delete" />
+
+            <Button
+                android:id="@+id/btnBackToAlb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:onClick="backToAlb"
+                android:text="@string/back" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvPhotos"
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:divider="@color/black"
+            android:dividerHeight="1px" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
